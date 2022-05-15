@@ -19,7 +19,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 const Sidebar = () => {
     return (
         <Box flex={1} p={2} sx={{display: {xs: "none", sm: "block"}}}>
-            <List>
+            <Box position="fixed"><List>
                 <ListItem disablePadding>
                     <ListItemButton component="a" href="#home">
                         <ListItemIcon>
@@ -84,7 +84,7 @@ const Sidebar = () => {
                         <Switch></Switch>
                     </ListItemButton>
                 </ListItem>
-            </List>
+            </List></Box>
         </Box>
     );
 };
